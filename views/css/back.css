@@ -1,0 +1,120 @@
+/**
+ * 2007-2020 KForge
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License 3.0 (AFL-3.0)
+ * that is bundled with this package in the file LICENSE.md.
+ * It is also available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/AFL-3.0
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to info@kforge.it so we can send you a copy immediately.
+ *
+ * @author    KForge snc <info@kforge.it>
+ * @copyright 2007-2021 KForge snc
+ * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
+ */
+
+/**
+ * Don't forget to prefix your containers with your own identifier
+ * to avoid any conflicts with others containers.
+ */
+
+#content .tab-pane:first-child .panel {
+    border-top-left-radius: 0;
+}
+
+.soisy_free-header .text-branded,
+.soisy_free-content .text-branded {
+    color: #34b44d;
+}
+
+.soisy_free-header h4,
+.soisy_free-content h4,
+.soisy_free-content h5 {
+    margin: 2px 0;
+    color: #34b44d;
+    font-size: 1.8em;
+}
+
+.soisy_free-header h4 {
+    margin-top: 5px;
+}
+
+.soisy_free-header .col-md-6 {
+    margin-top: 18px;
+}
+
+.soisy_free-content h4 {
+    margin-bottom: 10px;
+}
+
+.soisy_free-content h5 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.soisy_free-content h6 {
+    font-size: 1.3em;
+    margin: 1px 0 4px 0;
+}
+
+.soisy_free-header > .col-md-4 {
+    height: 65px;
+    vertical-align: middle;
+    border-left: 1px solid #ddd;
+}
+
+.soisy_free-header > .col-md-4:first-child {
+    border-left: none;
+}
+
+.soisy_free-header #create-account-btn {
+    margin-top: 14px;
+}
+
+.soisy_free-content dd + dt {
+    margin-top: 5px;
+}
+
+.soisy_free-content ul {
+    padding-left: 15px;
+}
+
+.soisy_free-content .ul-spaced li {
+    margin-bottom: 5px;
+}
+
+.soisy_free-input {
+    min-width: 270px;
+    max-width: 270px;
+}
+
+.soisy_free-input input[type="number"] {
+    background-color: #f5f8f9;
+    background-image: none;
+    border: 1px solid #c7d6db;
+    border-radius: 3px;
+    color: #555;
+    display: table-cell;
+    font-size: 12px;
+    height: 31px;
+    line-height: 1.42857;
+    padding: 6px 8px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.soisy_free-input span.input-group-addon {
+    min-width: 31px;
+}
+
+.soisy_free-input.input-small {
+    min-width: 100px;
+    width: 100px;
+}
+
+.soisy_free-flex {
+    display: flex;
+}

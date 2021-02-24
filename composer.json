@@ -1,0 +1,23 @@
+{
+    "name": "kforge/presatshop-soisy-free",
+    "description": "Prestashop: pagamento rateale Soisy",
+    "license": "AFL - Academic Free License (AFL 3.0)",
+    "autoload": {
+      "psr-4": {
+        "KForge\\Soisy\\": "vendor/kforge/soisy-lib-php/src"
+      }
+    },
+    "authors": [
+        {
+            "name": "KForge snc",
+            "email": "info@kforge.it"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "config": {
+        "prepend-autoloader": false
+    },
+    "type": "prestashop-module"
+  }
