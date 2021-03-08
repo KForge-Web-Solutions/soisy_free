@@ -1,6 +1,6 @@
 <?php
 /**
- * 2007-2020 KForge
+ * 2007-2021 KForge
  *
  * NOTICE OF LICENSE
  *
@@ -22,7 +22,7 @@ if (!defined('_PS_VERSION_')) {
 }
 
 include_once(_PS_MODULE_DIR_ . 'soisy_free/vendor/autoload.php');
-include_once(_PS_MODULE_DIR_ . 'soisy_free/classes/Client.php');//1.6 mess up...
+//include_once(_PS_MODULE_DIR_ . 'soisy_free/classes/KFSClient.php');//1.6 mess up...
 //use PrestaShop\PrestaShop\Core\Payment\PaymentOption;
 //use KForge\Soisy\Client;
 //cannot use there because pshop 1.6 use eval()...
@@ -42,7 +42,7 @@ class Soisy_free extends PaymentModule
     {
         $this->name = 'soisy_free';
         $this->tab = 'payments_gateways';
-        $this->version = '1.0.0';
+        $this->version = '1.0.1';
         $this->author = 'KForge';
         $this->bootstrap = true;
 
@@ -77,7 +77,7 @@ class Soisy_free extends PaymentModule
             ],
         ];
 
-        $this->client = new Client(
+        $this->client = new KForge\Lib\KFSClient(
             Configuration::get('SOISY_FREE_SHOP_ID', ''),
             Configuration::get('SOISY_FREE_API_KEY', ''),
             !Configuration::get('SOISY_FREE_LIVE_MODE'),
@@ -194,7 +194,7 @@ class Soisy_free extends PaymentModule
         ];
 
         try {
-            (new Client(
+            (new KForge\Lib\KFSClient(
                 Tools::getValue('SOISY_FREE_LIVE_MODE') ? Tools::getValue('SOISY_FREE_SHOP_ID') : '',
                 Tools::getValue('SOISY_FREE_LIVE_MODE') ? Tools::getValue('SOISY_FREE_API_KEY') : '',
                 !Tools::getValue('SOISY_FREE_LIVE_MODE'),

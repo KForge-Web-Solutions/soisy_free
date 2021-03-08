@@ -1,6 +1,6 @@
 <?php
 /**
- * 2007-2020 KForge
+ * 2007-2021 KForge
  *
  * NOTICE OF LICENSE
  *

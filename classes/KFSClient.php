@@ -1,18 +1,13 @@
 <?php
 
+namespace KForge\Lib;
+
 use KForge\Soisy\Client as BaseClient;
 
-class Client
+class KFSClient
 {
     private $client;
     private $module;
-
-    public $statusList = [
-        'LoanWasApproved'  => ['request_approved'],
-        'LoanWasVerified'  => ['waiting_for_disbursement'],
-        'LoanWasDisbursed' => ['disbursed'],
-        'UserWasRejected'  => ['cancelled'],
-    ];
 
     public function __construct(string $shopId, string $apiKey, $sandboxMode = true, $module)
     {

@@ -1,4 +1,5 @@
-{**
+<?php
+/**
  * 2007-2021 KForge
  *
  * NOTICE OF LICENSE
@@ -14,5 +15,21 @@
  * @author    KForge snc <info@kforge.it>
  * @copyright 2007-2021 KForge snc
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
- *}
-<script src="{$cdn_uri}" async defer></script>
+ */
+if (!defined('_PS_VERSION_')) {
+    exit;
+}
+
+/**
+ * This function updates your module from previous versions to the version 1.2.0,
+ * usefull when you modify your database, or register a new hook ...
+ * Don't forget to create one file per version.
+ */
+function upgrade_module_1_0_1($module)
+{
+    $path = $module->getLocalPath();
+    if (file_exists($path.'classes/Client.php')) {
+        unlink($path.'classes/Client.php');
+    }
+    return true;
+}
