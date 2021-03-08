@@ -6,9 +6,9 @@
 ## Features
 - installazione e disinstallazione secondo gli standard di PrestShop con inserimento dello status ordine "In attesa pagamento Soisy";
 - configurazione in backoffice con:
-- live mode/sandbox mode;
-- credenziali;
-- il minimo rateizzabile è inserito in fase di installazione e non configurabile 
+  - live mode/sandbox mode;
+  - credenziali;
+- il minimo rateizzabile è inserito in fase di installazione e non configurabile (250€)
 - è presente il widget ufficiale per la per la simulazione rateale sulla scheda prodotto e sul bottone di checkout;
 - se il minimo rateizzabile è eguagliato o superato il sistema proporrà il pagamento durante il checkout
 ## Comportamento al checkout
