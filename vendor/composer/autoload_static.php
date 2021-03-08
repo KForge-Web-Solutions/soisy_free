@@ -4,12 +4,13 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitd84457cd0bec7928b61a3f2494676f2b
+class ComposerStaticInit2df7cecc726b2488c1787ff038fe10d9
 {
     public static $prefixLengthsPsr4 = array (
         'K' => 
         array (
             'KForge\\Soisy\\' => 13,
+            'KForge\\Lib\\' => 11,
         ),
     );
 
@@ -17,6 +18,10 @@ class ComposerStaticInitd84457cd0bec7928b61a3f2494676f2b
         'KForge\\Soisy\\' => 
         array (
             0 => __DIR__ . '/..' . '/kforge/soisy-lib-php/src',
+        ),
+        'KForge\\Lib\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/classes',
         ),
     );
 
@@ -27,9 +32,9 @@ class ComposerStaticInitd84457cd0bec7928b61a3f2494676f2b
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitd84457cd0bec7928b61a3f2494676f2b::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitd84457cd0bec7928b61a3f2494676f2b::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitd84457cd0bec7928b61a3f2494676f2b::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit2df7cecc726b2488c1787ff038fe10d9::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit2df7cecc726b2488c1787ff038fe10d9::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit2df7cecc726b2488c1787ff038fe10d9::$classMap;
 
         }, null, ClassLoader::class);
     }

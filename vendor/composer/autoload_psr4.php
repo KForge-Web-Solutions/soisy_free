@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'KForge\\Soisy\\' => array($vendorDir . '/kforge/soisy-lib-php/src'),
+    'KForge\\Lib\\' => array($baseDir . '/classes'),
 );
