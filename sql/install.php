@@ -30,7 +30,7 @@ $sql[] = 'CREATE TABLE IF NOT EXISTS `' . _DB_PREFIX_ . 'soisy_free` (
     `payment_status` varchar(255) NOT NULL DEFAULT \'\',
     `sandbox` tinyint(1) UNSIGNED NOT NULL,
     `created_at` datetime NOT NULL,
-    `updated_at` datetime NOT NULL DEFAULT \'0000-00-00 00:00:00\' ON UPDATE current_timestamp(),
+    `updated_at` timestamp NOT NULL DEFAULT \'0000-00-00 00:00:00\' ON UPDATE current_timestamp(),
     PRIMARY KEY  (`id_soisy_free`)
 ) ENGINE=' . _MYSQL_ENGINE_ . ' DEFAULT CHARSET=utf8;';
 
