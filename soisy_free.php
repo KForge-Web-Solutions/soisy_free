@@ -159,11 +159,11 @@ class Soisy_free extends PaymentModule
         if (((bool)Tools::isSubmit('submitSoisy_freeModule')) == true) {
             //$errors = $this->validateForm();
 
-            if (empty($errors)) {
+            //if (empty($errors)) {
                 $this->postProcess();
-            } else {
-                $output .= $this->displayError($this->l($errors[0]));
-            }
+            //} else {
+                //$output .= $this->displayError($this->l($errors[0]));
+            //}
         }
 
         $this->context->smarty->assign('module_dir', $this->_path);
