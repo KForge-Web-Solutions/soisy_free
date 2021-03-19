@@ -42,7 +42,7 @@ class Soisy_free extends PaymentModule
     {
         $this->name = 'soisy_free';
         $this->tab = 'payments_gateways';
-        $this->version = '1.0.1';
+        $this->version = '1.0.2';
         $this->author = 'KForge';
         $this->bootstrap = true;
 
@@ -157,7 +157,7 @@ class Soisy_free extends PaymentModule
          * If values have been submitted in the form, process.
          */
         if (((bool)Tools::isSubmit('submitSoisy_freeModule')) == true) {
-            $errors = $this->validateForm();
+            //$errors = $this->validateForm();
 
             if (empty($errors)) {
                 $this->postProcess();
